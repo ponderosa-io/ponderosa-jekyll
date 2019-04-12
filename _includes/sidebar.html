@@ -1,14 +1,11 @@
 <div class="tile is-2 is-parent is-vertical">
     <div class="tile is-child">
-        <aside class="menu">
+        <aside class="menu is-hidden-mobile has-shadow">
             <p class="menu-label">
-                Workshop Sections
-                <span class="is-hidden-tablet" id="menu-toggle" onclick="toggleMenu()">
-                    <i class="fas fa-chevron-down"></i> 
-                </span>
+                Modules
             </p>
 
-            <ul class="menu-list is-hidden-mobile" id="menu">
+            <ul class="menu-list" id="menu">
                 {% for page in site.workshop_pages %}
                 <li><a href="{{ page.url }}">{{ page.title }}</a></li>
                 {% endfor %}
